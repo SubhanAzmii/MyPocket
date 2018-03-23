@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class Register extends AppCompatActivity {
-    EditText user,pass,retype;
+    EditText user, pass, retype;
     Button register;
 
     @Override
@@ -22,20 +22,22 @@ public class Register extends AppCompatActivity {
         retype = (EditText) findViewById(R.id.repassword);
         register = (Button) findViewById(R.id.register);
 
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String pswd = pass.getText().toString();
+                String rtype = retype.getText().toString();
+
+                if (pswd.equals(rtype)) {
+                    Intent a = new Intent(Register.this, login.class);
+                    startActivity(a);
+                } else {
+                    Toast.makeText(Register.this, "salah", Toast.LENGTH_SHORT).show();
+
+                }
+            }
+        });
 
 
-    }
-
-    public void Register(View view) {
-        final String pswd = pass.getText().toString();
-        final String rtype = retype.getText().toString();
-
-        if (pswd == rtype){
-            Intent a = new Intent(Register.this, login.class);
-            startActivity(a);
-        }else {
-            Toast toast = Toast.makeText(this, "Password dan Re-Password Tidak sama !!!", Toast.LENGTH_LONG);
-            toast.show();
-        }
     }
 }

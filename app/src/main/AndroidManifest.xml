@@ -23,9 +23,12 @@
         </activity>
         <activity android:name=".item" />
         <activity android:name=".edititem" />
-        <activity android:name=".mainitem" />
         <activity android:name=".Register" />
-        <activity android:name=".login"></activity>
+        <activity android:name=".login" />
+        <activity
+            android:name=".mainitem"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".addItem"></activity>
     </application>
 
 </manifest>
