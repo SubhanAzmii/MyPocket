@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyPocket.iml" filepath="$PROJECT_DIR$/MyPocket.iml" />
+      <module fileurl="file://C:\Users\ASUS X453SA\Downloads\MyPocket\MyPocket.iml" filepath="C:\Users\ASUS X453SA\Downloads\MyPocket\MyPocket.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\ASUS X453SA\Downloads\MyPocket\app\app.iml" filepath="C:\Users\ASUS X453SA\Downloads\MyPocket\app\app.iml" />
     </modules>
   </component>
 </project>
